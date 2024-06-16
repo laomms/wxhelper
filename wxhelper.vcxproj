@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\chat_controller.cc" />
+    <ClCompile Include="src\chat_room_controller.cc" />
+    <ClCompile Include="src\client_socket.cc" />
+    <ClCompile Include="src\config.cc" />
+    <ClCompile Include="src\contacts_controller.cc" />
+    <ClCompile Include="src\db_controller.cc" />
+    <ClCompile Include="src\dllMain.cc" />
+    <ClCompile Include="src\hook.cc" />
+    <ClCompile Include="src\hook_controller.cc" />
+    <ClCompile Include="src\http_client.cc" />
+    <ClCompile Include="src\http_router.cc" />
+    <ClCompile Include="src\http_server.cc" />
+    <ClCompile Include="src\json_utils.cc" />
+    <ClCompile Include="src\misc_controller.cc" />
+    <ClCompile Include="src\sync_msg_hook.cc" />
+    <ClCompile Include="src\wechat_db.cc" />
+    <ClCompile Include="src\wechat_service.cc" />
+    <ClCompile Include="src\wxhelper.cc" />
+    <ClCompile Include="src\wxutils.cc" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\base64.h" />
+    <ClInclude Include="inc\base_config.h" />
+    <ClInclude Include="inc\chat_controller.h" />
+    <ClInclude Include="inc\chat_room_controller.h" />
+    <ClInclude Include="inc\client_socket.h" />
+    <ClInclude Include="inc\config.h" />
+    <ClInclude Include="inc\contacts_controller.h" />
+    <ClInclude Include="inc\db_controller.h" />
+    <ClInclude Include="inc\detours.h" />
+    <ClInclude Include="inc\hook.h" />
+    <ClInclude Include="inc\hook_controller.h" />
+    <ClInclude Include="inc\http_client.h" />
+    <ClInclude Include="inc\http_controller.h" />
+    <ClInclude Include="inc\http_router.h" />
+    <ClInclude Include="inc\http_server.h" />
+    <ClInclude Include="inc\json_utils.h" />
+    <ClInclude Include="inc\memory.h" />
+    <ClInclude Include="inc\misc_controller.h" />
+    <ClInclude Include="inc\mongoose.h" />
+    <ClInclude Include="inc\noncopyable.h" />
+    <ClInclude Include="inc\offset.h" />
+    <ClInclude Include="inc\singleton.h" />
+    <ClInclude Include="inc\sqlite_function.h" />
+    <ClInclude Include="inc\sync_msg_hook.h" />
+    <ClInclude Include="inc\thread_pool.h" />
+    <ClInclude Include="inc\tinyxml2.h" />
+    <ClInclude Include="inc\utils.h" />
+    <ClInclude Include="inc\wechat_db.h" />
+    <ClInclude Include="inc\wechat_interface.h" />
+    <ClInclude Include="inc\wechat_service.h" />
+    <ClInclude Include="inc\win_header.h" />
+    <ClInclude Include="inc\wxhelper.h" />
+    <ClInclude Include="inc\wxutils.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{D245A0CA-D4E8-3ECD-9DEB-C610DD36E27D}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.22621.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>wxhelper</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">wxhelper</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.dll</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>F:\wxhelper\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>F:\wxhelper\inc;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;WECHAT_VERSION=391019;SPDLOG_COMPILED_LIB;CMAKE_INTDIR="Debug";wxhelper_EXPORTS</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <LanguageStandard>Default</LanguageStandard>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;WECHAT_VERSION=391019;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Debug\";wxhelper_EXPORTS</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>\x64-windows\include;C:\Users\TonyPC\wxhelper\app\base\src\include;C:\Users\TonyPC\wxhelper\app\3rdparty\spdlog\include;C:\Users\TonyPC\wxhelper\app\3rdparty\lz4;C:\Users\TonyPC\wxhelper\app\3rdparty\base64;C:\Users\TonyPC\wxhelper\app\3rdparty\mongoose;C:\Users\TonyPC\wxhelper\app\3rdparty\json\include;C:\Users\TonyPC\wxhelper\app\3rdparty\tinyxml2;C:\Users\TonyPC\wxhelper\app\3rdparty\Detours\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>\x64-windows\include;C:\Users\TonyPC\wxhelper\app\base\src\include;C:\Users\TonyPC\wxhelper\app\3rdparty\spdlog\include;C:\Users\TonyPC\wxhelper\app\3rdparty\lz4;C:\Users\TonyPC\wxhelper\app\3rdparty\base64;C:\Users\TonyPC\wxhelper\app\3rdparty\mongoose;C:\Users\TonyPC\wxhelper\app\3rdparty\json\include;C:\Users\TonyPC\wxhelper\app\3rdparty\tinyxml2;C:\Users\TonyPC\wxhelper\app\3rdparty\Detours\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>base.lib;base64.lib;detours.lib;lz4.lib;mongoose.lib;spdlogd.lib;tinyxml2.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
