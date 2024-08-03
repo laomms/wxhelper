@@ -94,7 +94,7 @@
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LibraryPath>$(ProjectDir)/lib;$(LibraryPath)</LibraryPath>
+    <LibraryPath>$(ProjectDir)\lib;$(LibraryPath)</LibraryPath>
     <IncludePath>$(ProjectDir)\inc;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
