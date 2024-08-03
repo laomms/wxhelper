@@ -94,8 +94,8 @@
     <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
-    <LibraryPath>F:\wxhelper\lib;$(LibraryPath)</LibraryPath>
-    <IncludePath>F:\wxhelper\inc;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)/lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)\inc;$(IncludePath)</IncludePath>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
