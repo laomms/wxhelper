@@ -114,10 +114,10 @@
     </ClCompile>
     <ResourceCompile>
       <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;WECHAT_VERSION=391019;SPDLOG_COMPILED_LIB;CMAKE_INTDIR=\"Debug\";wxhelper_EXPORTS</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>\x64-windows\include;C:\Users\TonyPC\wxhelper\app\base\src\include;C:\Users\TonyPC\wxhelper\app\3rdparty\spdlog\include;C:\Users\TonyPC\wxhelper\app\3rdparty\lz4;C:\Users\TonyPC\wxhelper\app\3rdparty\base64;C:\Users\TonyPC\wxhelper\app\3rdparty\mongoose;C:\Users\TonyPC\wxhelper\app\3rdparty\json\include;C:\Users\TonyPC\wxhelper\app\3rdparty\tinyxml2;C:\Users\TonyPC\wxhelper\app\3rdparty\Detours\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>\x64-windows\include;C:\Users\TonyPC\wxhelper\app\base\src\include;C:\Users\TonyPC\wxhelper\app\3rdparty\spdlog\include;C:\Users\TonyPC\wxhelper\app\3rdparty\lz4;C:\Users\TonyPC\wxhelper\app\3rdparty\base64;C:\Users\TonyPC\wxhelper\app\3rdparty\mongoose;C:\Users\TonyPC\wxhelper\app\3rdparty\json\include;C:\Users\TonyPC\wxhelper\app\3rdparty\tinyxml2;C:\Users\TonyPC\wxhelper\app\3rdparty\Detours\src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>\x64-windows\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
