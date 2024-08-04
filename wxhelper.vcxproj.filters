@@ -1,0 +1,194 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\hook_controller.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http_client.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http_router.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\http_server.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\json_utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\misc_controller.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\sync_msg_hook.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread_pool.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wechat_db.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wechat_service.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wxhelper.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\wxutils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\chat_controller.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\chat_room_controller.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\client_socket.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\config.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\contacts_controller.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\db_controller.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\dllMain.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\hook.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\base64.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\chat_controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\chat_room_controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\client_socket.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\contacts_controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\db_controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\detours.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\hook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\hook_controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\http_client.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\http_controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\http_router.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\http_server.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\json_utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\misc_controller.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\mongoose.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\noncopyable.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\offset.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\singleton.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\sqlite_function.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\sync_msg_hook.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\thread_pool.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\tinyxml2.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\utils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\wechat_db.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\wechat_interface.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\wechat_service.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\win_header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\wxhelper.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\wxutils.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\base\inc\win_header.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\base_config.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="inc\memory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="wxhelper.rc">
+      <Filter>Resource Files</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+</Project>
