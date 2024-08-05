@@ -39,9 +39,6 @@
     <ClCompile Include="src\thread_pool.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\utils.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\wechat_db.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
@@ -83,9 +80,6 @@
     <ClInclude Include="resource.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="inc\base64.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="inc\chat_controller.h">
       <Filter>Header Files</Filter>
     </ClInclude>
@@ -102,9 +96,6 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="inc\db_controller.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="inc\detours.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="inc\hook.h">
@@ -125,37 +116,16 @@
     <ClInclude Include="inc\http_server.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="inc\json_utils.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="inc\misc_controller.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="inc\mongoose.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="inc\noncopyable.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="inc\offset.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="inc\singleton.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="inc\sqlite_function.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="inc\sync_msg_hook.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="inc\thread_pool.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="inc\tinyxml2.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="inc\utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="inc\wechat_db.h">
@@ -167,22 +137,13 @@
     <ClInclude Include="inc\wechat_service.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="inc\win_header.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="inc\wxhelper.h">
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="inc\wxutils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="inc\base\inc\win_header.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="inc\base_config.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="inc\memory.h">
+    <ClInclude Include="inc\json_utils.h">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

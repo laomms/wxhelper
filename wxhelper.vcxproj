@@ -27,23 +27,18 @@
     <ClCompile Include="src\misc_controller.cc" />
     <ClCompile Include="src\sync_msg_hook.cc" />
     <ClCompile Include="src\thread_pool.cc" />
-    <ClCompile Include="src\utils.cc" />
     <ClCompile Include="src\wechat_db.cc" />
     <ClCompile Include="src\wechat_service.cc" />
     <ClCompile Include="src\wxhelper.cc" />
     <ClCompile Include="src\wxutils.cc" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="inc\base64.h" />
-    <ClInclude Include="inc\base\inc\win_header.h" />
-    <ClInclude Include="inc\base_config.h" />
     <ClInclude Include="inc\chat_controller.h" />
     <ClInclude Include="inc\chat_room_controller.h" />
     <ClInclude Include="inc\client_socket.h" />
     <ClInclude Include="inc\config.h" />
     <ClInclude Include="inc\contacts_controller.h" />
     <ClInclude Include="inc\db_controller.h" />
-    <ClInclude Include="inc\detours.h" />
     <ClInclude Include="inc\hook.h" />
     <ClInclude Include="inc\hook_controller.h" />
     <ClInclude Include="inc\http_client.h" />
@@ -51,21 +46,13 @@
     <ClInclude Include="inc\http_router.h" />
     <ClInclude Include="inc\http_server.h" />
     <ClInclude Include="inc\json_utils.h" />
-    <ClInclude Include="inc\memory.h" />
     <ClInclude Include="inc\misc_controller.h" />
-    <ClInclude Include="inc\mongoose.h" />
-    <ClInclude Include="inc\noncopyable.h" />
     <ClInclude Include="inc\offset.h" />
-    <ClInclude Include="inc\singleton.h" />
     <ClInclude Include="inc\sqlite_function.h" />
     <ClInclude Include="inc\sync_msg_hook.h" />
-    <ClInclude Include="inc\thread_pool.h" />
-    <ClInclude Include="inc\tinyxml2.h" />
-    <ClInclude Include="inc\utils.h" />
     <ClInclude Include="inc\wechat_db.h" />
     <ClInclude Include="inc\wechat_interface.h" />
     <ClInclude Include="inc\wechat_service.h" />
-    <ClInclude Include="inc\win_header.h" />
     <ClInclude Include="inc\wxhelper.h" />
     <ClInclude Include="inc\wxutils.h" />
     <ClInclude Include="resource.h" />
@@ -132,7 +119,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>inc;inc\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>inc\nlohmann\include;inc\tinyxml2;inc\mongoose;inc\lz4;inc\Detours;inc\base;inc\base64;inc;inc\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -157,7 +144,7 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>inc\spdlog\include;inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>inc\nlohmann\include;inc\tinyxml2;inc\mongoose;inc\lz4;inc\Detours;inc\base;inc\base64;inc;inc\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
