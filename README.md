@@ -1,6 +1,7 @@
 https://github.com/ttttupup/wxhelper  重编译版
 ```c++
 injector.exe -n WeChat.exe -i wxhelper.dll
+netstat -ano | findstr 19088
 ```
 WECHAT_VERSION=391125  
 ```c++
