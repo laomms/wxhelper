@@ -1,7 +1,7 @@
 https://github.com/ttttupup/wxhelper  重编译版
-
+```c++
 injector.exe -n WeChat.exe -i wxhelper.dll
-
+```
 WECHAT_VERSION=391125  
 ```c++
 const uint64_t kGetAccountServiceMgr = 0x1b50d00;
