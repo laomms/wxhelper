@@ -26,7 +26,6 @@
     <ClCompile Include="src\json_utils.cc" />
     <ClCompile Include="src\misc_controller.cc" />
     <ClCompile Include="src\sync_msg_hook.cc" />
-    <ClCompile Include="src\thread_pool.cc" />
     <ClCompile Include="src\wechat_db.cc" />
     <ClCompile Include="src\wechat_service.cc" />
     <ClCompile Include="src\wxhelper.cc" />
@@ -119,7 +118,7 @@
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
       <LanguageStandard>stdcpp14</LanguageStandard>
-      <AdditionalIncludeDirectories>inc\nlohmann\include;inc\tinyxml2;inc\mongoose;inc\lz4;inc\Detours;inc\base;inc\base64;inc;inc\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>inc\nlohmann;inc\tinyxml2;inc\mongoose;inc\lz4;inc\Detours;inc\base;inc\base64;inc;inc\spdlog;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -144,7 +143,7 @@
       <WarningLevel>Level3</WarningLevel>
       <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
       <LanguageStandard>stdcpp17</LanguageStandard>
-      <AdditionalIncludeDirectories>inc\nlohmann\include;inc\tinyxml2;inc\mongoose;inc\lz4;inc\Detours;inc\base;inc\base64;inc;inc\spdlog\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>inc\nlohmann;inc\tinyxml2;inc\mongoose;inc\lz4;inc\Detours;inc\base;inc\base64;inc;inc\spdlog;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>

@@ -36,9 +36,6 @@
     <ClCompile Include="src\sync_msg_hook.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="src\thread_pool.cc">
-      <Filter>Source Files</Filter>
-    </ClCompile>
     <ClCompile Include="src\wechat_db.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
