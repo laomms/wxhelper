@@ -1,12 +1,17 @@
 https://github.com/ttttupup/wxhelper  重编译版
+
+
 ```c++
+注入:
 injector.exe -p pid -i wxhelper.dll
-or
+或
 injector.exe -n wechat.exe -i wxhelper.dll
 
+验证端口:
 netstat -ano | findstr 19088
 ```
 WECHAT_VERSION=391125  
+偏移自己修改  
 ```c++
 const uint64_t kGetAccountServiceMgr = 0x1b50d00;
 const uint64_t kSyncMsg = 0xc39680;
