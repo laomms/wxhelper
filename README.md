@@ -11,7 +11,9 @@ injector.exe -n wechat.exe -i wxhelper.dll
 netstat -ano | findstr 19088
 ```
 WECHAT_VERSION=391119  
-偏移自己修改  
+
+[download](https://github.com/tom-snow/wechat-windows-versions/releases/download/v3.9.11.19/WeChatSetup-3.9.11.19.exe)  
+
 ```c++
 const uint64_t kGetAccountServiceMgr = 0x1b50d00;
 const uint64_t kSyncMsg = 0xc39680;
