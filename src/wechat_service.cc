@@ -21,14 +21,12 @@
 #define GIF1 0x49
 #define GIF2 0x46
 
-
 namespace offset = wechat::offset;
 namespace prototype = wechat::prototype;
 namespace func = wechat::function;
 namespace utils = base::utils;
 namespace jsonutils = wxhelper::jsonutils;
 namespace wxutils = wxhelper::wxutils;
-
 prototype::WeChatString* BuildWechatString(const std::wstring& ws) {
   prototype::WeChatString* p =
       base::utils::WxHeapAlloc<prototype::WeChatString>(
@@ -575,7 +573,7 @@ int64_t wechat::WeChatService::RemoveTopMsg(const std::wstring& room_id,
                            reinterpret_cast<UINT64>(chat_room_id));
   return success;
 }
-//TODO("InviteMemberToChatRoom")
+TODO("InviteMemberToChatRoom")
 int64_t wechat::WeChatService::InviteMemberToChatRoom(
     const std::wstring& room_id, const std::vector<std::wstring>& wxids) {
   int64_t success = -1;
@@ -598,7 +596,7 @@ int64_t wechat::WeChatService::InviteMemberToChatRoom(
   return success;
 }
 
-//TODO("CreateChatRoom")
+TODO("CreateChatRoom")
 int64_t wechat::WeChatService::CreateChatRoom(
     const std::vector<std::wstring>& wxids) {
   int64_t success = -1;
@@ -621,7 +619,7 @@ int64_t wechat::WeChatService::CreateChatRoom(
   return success;
 }
 
-//TODO("QuitChatRoom")
+TODO("QuitChatRoom")
 int64_t wechat::WeChatService::QuitChatRoom(const std::wstring& room_id) {
   int64_t success = -1;
   uint64_t get_chat_room_mgr_addr = base_addr_ + offset::kChatRoomMgr;
@@ -657,7 +655,7 @@ int64_t wechat::WeChatService::ForwardMsg(uint64_t msg_id,
   return success;
 }
 
-//TODO("GetSNSFirstPage")
+TODO("GetSNSFirstPage")
 int64_t wechat::WeChatService::GetSNSFirstPage() {
   int64_t success = -1;
   uint64_t sns_data_mgr_addr = base_addr_ + offset::kSNSDataMgr;
@@ -671,7 +669,7 @@ int64_t wechat::WeChatService::GetSNSFirstPage() {
   return success;
 }
 
-//TODO("GetSNSNextPage")
+TODO("GetSNSNextPage")
 int64_t wechat::WeChatService::GetSNSNextPage(uint64_t sns_id) {
   int64_t success = -1;
   uint64_t time_line_mgr_addr = base_addr_ + offset::kSNSTimeLineMgr;
@@ -790,7 +788,7 @@ int64_t wechat::WeChatService::SendAtText(
   free(reinterpret_cast<uint64_t>(&chat_msg));
   return 0;
 }
-//TODO("GetContactOrChatRoomNickname")
+TODO("GetContactOrChatRoomNickname")
 std::wstring wechat::WeChatService::GetContactOrChatRoomNickname(
     const std::wstring& wxid) {
   int64_t success = -1;
@@ -846,7 +844,7 @@ int64_t wechat::WeChatService::GetContactByWxid(const std::wstring& wxid,
   return success;
 }
 
-//TODO("DoDownloadTask")
+TODO("DoDownloadTask")
 int64_t wechat::WeChatService::DoDownloadTask(uint64_t msg_id) {
   int64_t success = -1;
   uint64_t get_by_local_id_addr = base_addr_ + offset::kGetMgrByPrefixLocalId;
@@ -981,7 +979,7 @@ int64_t wechat::WeChatService::DoDownloadTask(uint64_t msg_id) {
   return success;
 }
 
-//TODO("ForwardPublicMsg")
+TODO("ForwardPublicMsg")
 int64_t wechat::WeChatService::ForwardPublicMsg(const std::wstring& wxid,
                                                 const std::wstring& title,
                                                 const std::wstring& url,
@@ -992,12 +990,12 @@ int64_t wechat::WeChatService::ForwardPublicMsg(const std::wstring& wxid,
   return 0;
 }
 
-//TODO("ForwardPublicMsgByMsgId")
+TODO("ForwardPublicMsgByMsgId")
 int64_t wechat::WeChatService::ForwardPublicMsgByMsgId(const std::wstring& wxid,
                                                        uint64_t msg_id) {
   return 0;
 }
-//TODO("DecodeImage")
+TODO("DecodeImage")
 int64_t wechat::WeChatService::DecodeImage(const std::wstring& file_path,
                                            const std::wstring& save_dir) {
   if (!wxutils::FindOrCreateDirectory(save_dir)) {
@@ -1073,12 +1071,12 @@ int64_t wechat::WeChatService::DecodeImage(const std::wstring& file_path,
   CloseHandle(save_img);
   return 1;
 }
-//TODO("GetVoiceByDB")
+TODO("GetVoiceByDB")
 int64_t wechat::WeChatService::GetVoiceByDB(ULONG64 msg_id,
                                             const std::wstring& dir) {
   return 0;
 }
-//TODO("SendCustomEmotion")
+TODO("SendCustomEmotion")
 int64_t wechat::WeChatService::SendCustomEmotion(const std::wstring& file_path,
                                                  const std::wstring& wxid) {
   int64_t success = -1;
@@ -1101,7 +1099,7 @@ int64_t wechat::WeChatService::SendCustomEmotion(const std::wstring& file_path,
   return success;
 }
 
-//TODO("SendApplet")
+TODO("SendApplet")
 int64_t wechat::WeChatService::SendApplet(
     const std::wstring& recv_wxid, const std::wstring& waid_suff,
     const std::wstring& waid_w, const std::wstring& waid_s,
@@ -1218,7 +1216,7 @@ int64_t wechat::WeChatService::SendPatMsg(const std::wstring& room_id,
   return success;
 }
 
-//TODO("DoOCRTask")
+TODO("DoOCRTask")
 int64_t wechat::WeChatService::DoOCRTask(const std::wstring& img_path,
                                          std::string& result) {
   int64_t success = -1;
@@ -1286,7 +1284,8 @@ int64_t wechat::WeChatService::EnterWeChat() {
   int64_t base_addr = wxutils::GetWeChatWinBase();
   uint64_t click_cb_addr = base_addr + offset::kOnLoginBtnClick;
   func::__OnLoginBtnClick cb = (func::__OnLoginBtnClick)click_cb_addr;
-  auto vec = base::memory::ScanAndMatchValue(base_addr + 0x4ecedf8, 0x1000, 0x8);
+  auto vec =
+      base::memory::ScanAndMatchValue(base_addr + 0x4ecedf8, 0x1000, 0x8);
   for (int i = 0; i < vec.size(); i++) {
     int64_t ptr = vec.at(i);
     if (*(int64_t*)ptr == base_addr + 0x4ecedf8) {
@@ -1298,7 +1297,7 @@ int64_t wechat::WeChatService::EnterWeChat() {
   return success;
 }
 
-//TODO("SendMultiAtText")
+TODO("SendMultiAtText")
 int64_t wechat::WeChatService::SendMultiAtText(
     const std::wstring& room_id,
     const std::vector<std::pair<std::wstring, std::wstring>>& at) {
@@ -1363,7 +1362,7 @@ void wechat::WeChatService::SetJsApiAddr(uint64_t addr) {
   this->js_api_addr_ = addr;
 }
 
-//TODO("TranslateVoice")
+TODO("TranslateVoice")
 int64_t wechat::WeChatService::TranslateVoice(uint64_t msg_id) {
   int64_t success = -1;
   uint64_t get_by_local_id_addr = base_addr_ + offset::kGetMgrByPrefixLocalId;
@@ -1420,7 +1419,7 @@ int64_t wechat::WeChatService::TranslateVoice(uint64_t msg_id) {
   return success;
 }
 
-//TODO("GetTranslateVoiceText")
+TODO("GetTranslateVoiceText")
 std::string wechat::WeChatService::GetTranslateVoiceText(uint64_t msg_id) {
   std::string content =
       wechat::WeChatDb::GetInstance().GetChatMsgStrContentByMsgId(msg_id);
@@ -1443,7 +1442,7 @@ std::string wechat::WeChatService::GetTranslateVoiceText(uint64_t msg_id) {
   return "";
 }
 
-//TODO("OpenUrlByWeChatBrowser")
+TODO("OpenUrlByWeChatBrowser")
 int64_t wechat::WeChatService::OpenUrlByWeChatBrowser(const std::wstring& url,
                                                       int flag) {
   int64_t success = -1;
@@ -1479,14 +1478,14 @@ int64_t wechat::WeChatService::OpenUrlByWeChatBrowser(const std::wstring& url,
   return success;
 }
 
-//TODO("GetChatRoomMemberNickname")
+TODO("GetChatRoomMemberNickname")
 std::wstring wechat::WeChatService::GetChatRoomMemberNickname(
     const std::wstring& room_id, const std::wstring& member_id) {
 
   return std::wstring();
 }
 
-//TODO("DelContact")
+TODO("DelContact")
 int64_t wechat::WeChatService::DelContact(const std::wstring& wxid) {
   int64_t success = -1;
   uint64_t del_contcat_addr = base_addr_ + offset::kDoDelContact;
@@ -1495,7 +1494,7 @@ int64_t wechat::WeChatService::DelContact(const std::wstring& wxid) {
   return success;
 }
 
-//TODO("SearchContact")
+TODO("SearchContact")
 int64_t wechat::WeChatService::SearchContact(
     const std::wstring& keyword, wechat::SearchContactInner& contact) {
   int64_t success = -1;
@@ -1507,12 +1506,12 @@ int64_t wechat::WeChatService::SearchContact(
       (func::__GetSearchContactMgr)search_mgr_addr;
   func::__StartSearch search = (func::__StartSearch)search_addr;
   uint64_t mgr = get_mgr();
-  // success = search(mgr,&key);
+  //success = search(mgr,&key);
 
   return success;
 }
 
-//TODO("AddFriendByWxid")
+TODO("AddFriendByWxid")
 int64_t wechat::WeChatService::AddFriendByWxid(const std::wstring& wxid,
                                                const std::wstring& msg) {
   uint64_t add_friend_addr = base_addr_ + offset::kAddFriend;
@@ -1520,7 +1519,7 @@ int64_t wechat::WeChatService::AddFriendByWxid(const std::wstring& wxid,
   return 0;
 }
 
-//TODO("VerifyApply")
+TODO("VerifyApply")
 int64_t wechat::WeChatService::VerifyApply(const std::wstring& v3,
                                            const std::wstring& v4,
                                            int32_t permission) {
@@ -1529,7 +1528,7 @@ int64_t wechat::WeChatService::VerifyApply(const std::wstring& v3,
   return 0;
 }
 
-//TODO("DoConfirmReceipt")
+TODO("DoConfirmReceipt")
 int64_t wechat::WeChatService::DoConfirmReceipt(
     const std::wstring& wxid, const std::wstring& transcationid,
     const std::wstring& transferid) {
@@ -1560,7 +1559,7 @@ int64_t wechat::WeChatService::DoConfirmReceipt(
   return success;
 }
 
-//TODO("DoRefuseReceipt")
+TODO("DoRefuseReceipt")
 int64_t wechat::WeChatService::DoRefuseReceipt(
     const std::wstring& wxid, const std::wstring& transcationid,
     const std::wstring& transferid) {

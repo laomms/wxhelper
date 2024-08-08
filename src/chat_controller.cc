@@ -84,7 +84,7 @@ std::string ChatController::SendCustomEmotion(std::string params) {
   return ret.dump();
 }
 
-//TODO("")
+TODO("")
 std::string ChatController::SendApplet(std::string params) {
   SPDLOG_INFO("SendApplet params={}", params);
   nlohmann::json jp = nlohmann::json::parse(params);
