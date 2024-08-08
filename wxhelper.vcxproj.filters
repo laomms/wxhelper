@@ -72,6 +72,15 @@
     <ClCompile Include="src\hook.cc">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\memory.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\thread_pool.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\utils.cc">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="resource.h">
