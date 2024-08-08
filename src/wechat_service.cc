@@ -939,7 +939,7 @@ std::wstring wechat::WeChatService::DoDownloadTask(uint64_t msg_id) {
       }
       size_t pos = save_path.find_last_of(L'\\');
       if (pos != std::wstring::npos) {
-          save_path = save_path.substr(0, pos + 1); // 保留最后一个反斜杠
+          save_path = save_path.substr(0, pos + 1); 
       }
       break;
   }

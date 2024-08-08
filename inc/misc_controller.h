@@ -27,8 +27,9 @@ class MiscController : public http::HttpController<MiscController> {
   ADD_PATH("/api/getTranslateVoiceText", GetTranslateVoiceText);
   ADD_PATH("/api/openUrlByWeChat", OpenUrlByWeChat);
   ADD_PATH("/api/confirmReceipt", ConfirmReceipt);
+  ADD_PATH("/api/refuseReceipt",RefundReceipt);
   ADD_PATH("/api/downloadAttach", DownloadAttach);
-
+  ADD_PATH("/api/verifyApply", VerifyApply);
   PATHS_END
 
  public:
@@ -100,10 +101,18 @@ class MiscController : public http::HttpController<MiscController> {
   /// @param params json
   /// @return json
   static std::string ConfirmReceipt(std::string params);
+  /// @brief 拒绝收款
+  /// @param params json
+  /// @return json
+  static std::string RefundReceipt(std::string params);
   /// @brief 下载附件
   /// @param params json
   /// @return json
   static std::string DownloadAttach(std::string params);
+  /// @brief 通过好友
+  /// @param params json
+  /// @return json
+  static std::string VerifyApply(std::string params);
 };
 }  // namespace wxhelper
 

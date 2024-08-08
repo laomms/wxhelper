@@ -159,6 +159,19 @@ std::string MiscController::ConfirmReceipt(std::string params) {
   nlohmann::json ret = {{"code", success}, {"data", {}}, {"msg", "success"}};
   return ret.dump();
 }
+std::string MiscController::RefundReceipt(std::string params)
+{
+    SPDLOG_INFO("RefuseReceipt params:{}", params);
+    nlohmann::json jp = nlohmann::json::parse(params);
+    std::wstring wxid = jsonutils::GetWStringParam(jp, "wxid");
+    std::wstring transcationid = jsonutils::GetWStringParam(jp, "transcationId");
+    std::wstring transferid = jsonutils::GetWStringParam(jp, "transferId");
+    int64_t success = wechat::WeChatService::GetInstance().DoRefuseReceipt(
+        wxid, transcationid, transferid);
+    nlohmann::json ret = { {"code", success}, {"data", {}}, {"msg", "success"} };
+    return ret.dump();
+}
+
 std::string MiscController::DownloadAttach(std::string params) {
   SPDLOG_INFO("DownloadAttach params:{}", params);
   nlohmann::json jp = nlohmann::json::parse(params);
@@ -169,4 +182,16 @@ std::string MiscController::DownloadAttach(std::string params) {
       {"code", 1}, {"data", {"result", result_str}}, {"msg", "success"} };
   return ret.dump();
 }
+std::string MiscController::VerifyApply(std::string params)
+{
+    SPDLOG_INFO("verifyApply params:{}", params);
+    nlohmann::json jp = nlohmann::json::parse(params);
+    int32_t permission = jsonutils::GetIntParam(jp, "permission");
+    std::wstring v3 = jsonutils::GetWStringParam(jp, "v3");
+    std::wstring v4 = jsonutils::GetWStringParam(jp, "v4");
+    int64_t success = wechat::WeChatService::GetInstance().VerifyApply(v3, v4, permission);
+    nlohmann::json ret = { {"code", success}, {"data", {}}, {"msg", "success"} };
+    return ret.dump();
+}
+
 }  // namespace wxhelper
