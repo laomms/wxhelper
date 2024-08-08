@@ -1,5 +1,6 @@
 ﻿#include "misc_controller.h"
-
+#include <locale> 
+#include <codecvt> 
 #include "json_utils.h"
 #include "nlohmann/json.hpp"
 #include "spdlog/spdlog.h"
@@ -162,8 +163,10 @@ std::string MiscController::DownloadAttach(std::string params) {
   SPDLOG_INFO("DownloadAttach params:{}", params);
   nlohmann::json jp = nlohmann::json::parse(params);
   int64_t msg_id = jsonutils::GetInt64Param(jp, "msgId");
-  int64_t success = wechat::WeChatService::GetInstance().DoDownloadTask(msg_id);
-  nlohmann::json ret = {{"code", success}, {"data", {}}, {"msg", "success"}};
+  std::wstring result = wechat::WeChatService::GetInstance().DoDownloadTask(msg_id);
+  std::string result_str = std::wstring_convert<std::codecvt_utf8<wchar_t>>().to_bytes(result);
+  nlohmann::json ret = {
+      {"code", 1}, {"data", {"result", result_str}}, {"msg", "success"} };
   return ret.dump();
 }
 }  // namespace wxhelper

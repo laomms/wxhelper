@@ -858,7 +858,13 @@ std::wstring combineAndRemoveDuplicate(const std::wstring& basePath, const std::
     return basePath + L'\\' + resultPath;
 }
 TODO("DoDownloadTask")
-
+std::wstring getBasePath(const std::wstring& path) {
+    size_t pos = path.find_last_of(L'\\');
+    if (pos != std::wstring::npos) {
+        return path.substr(0, pos + 1);
+    }
+    return path; // 如果没有找到反斜杠，则返回原路径
+}
 std::wstring wechat::WeChatService::DoDownloadTask(uint64_t msg_id) {
 
   uint64_t get_by_local_id_addr = base_addr_ + offset::kGetMgrByPrefixLocalId;
@@ -934,13 +940,8 @@ std::wstring wechat::WeChatService::DoDownloadTask(uint64_t msg_id) {
 
   switch (type) {
   case 0x3: {   
-      if (!save_path.empty() && save_path.back() == L'\\') {
-          save_path.pop_back();
-      }
-      size_t pos = save_path.find_last_of(L'\\');
-      if (pos != std::wstring::npos) {
-          save_path = save_path.substr(0, pos + 1); // 保留最后一个反斜杠
-      }
+      std::wstring basePath = getBasePath(save_path);
+      save_path = basePath;
       break;
   }
   case 0x3E:

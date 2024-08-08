@@ -54,7 +54,7 @@ class WeChatService : public base::Singleton<WeChatService> {
   std::wstring GetContactOrChatRoomNickname(const std::wstring& wxid);
   int64_t GetContactByWxid(const std::wstring& wxid,
                            ContactProfileInner& profile);
-  int64_t DoDownloadTask(uint64_t msg_id);
+  std::wstring DoDownloadTask(uint64_t msg_id);
   int64_t ForwardPublicMsg(const std::wstring& wxid, const std::wstring& title,
                            const std::wstring& url,
                            const std::wstring& thumb_url,
