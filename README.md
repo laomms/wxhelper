@@ -1,4 +1,4 @@
-https://github.com/ttttupup/wxhelper  重编译版
+https://github.com/ttttupup/wxhelper  VS2022重编译版
 
 
 ```c++
