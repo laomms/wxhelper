@@ -1558,7 +1558,7 @@ int64_t wechat::WeChatService::DoConfirmReceipt(
   new_pay_info(reinterpret_cast<uint64_t>(&pay_info));
   memcpy(&pay_info[0x30], &transcation_id, sizeof(transcation_id));
   memcpy(&pay_info[0x58], &transfer_id, sizeof(transfer_id));
-  // memcpy(&pay_info[0xA0], &recv_id, sizeof(recv_id));
+  memcpy(&pay_info[0xA0], &recv_id, sizeof(recv_id));
   success = do_confirm(reinterpret_cast<uint64_t>(&pay_info), reinterpret_cast<uint64_t>(&recv_id));
 
   free_pay_info(reinterpret_cast<uint64_t>(&pay_info));
