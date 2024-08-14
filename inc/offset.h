@@ -471,22 +471,22 @@ const uint64_t kDoDelContact = 0x2310120;
 const uint64_t kGetSearchContactMgr = 0x1f9a730;
 const uint64_t kStartSearch = 0x22a4200;
 #elif WECHAT_VERSION == V_3_9_11_25
-const uint64_t kGetAccountServiceMgr = 0x1b50d00;
+const uint64_t kGetAccountServiceMgr = 0x1B557D0;
 const uint64_t kSyncMsg = 0xc39680;
 const uint64_t kSyncMsgNext = 0xc39680;
-const uint64_t kGetCurrentDataPath = 0x2248ce0;
-const uint64_t kGetAppDataSavePath = 0x25dc0e0;
-const uint64_t kGetSendMessageMgr = 0x1b4f500;
-const uint64_t kSendTextMsg = 0x22c2010;
-const uint64_t kFreeChatMsg = 0x1b50d80;
+const uint64_t kGetCurrentDataPath = 0x224D830;
+const uint64_t kGetAppDataSavePath = 0x25E1040;
+const uint64_t kGetSendMessageMgr = 0x1B53FD0;
+const uint64_t kSendTextMsg = 0x22C6B60;
+const uint64_t kFreeChatMsg = 0x1B55850;
 
-const uint64_t kDoAddMsg = 0x230a3e0;
-const uint64_t kSendImageMsg = 0x22b77a0;
-const uint64_t kChatMsgInstanceCounter = 0x1b59670;
-const uint64_t kSendFileMsg = 0x20cb6f0;
-const uint64_t kGetAppMsgMgr = 0x1b544a0;
-const uint64_t kGetContactMgr = 0x1b3ccd0;
-const uint64_t kGetContactList = 0x219a1c0;
+const uint64_t kDoAddMsg = 0x230EF30;
+const uint64_t kSendImageMsg = 0x22BC2F0;
+const uint64_t kChatMsgInstanceCounter = 0x1B5E140;
+const uint64_t kSendFileMsg = 0x20D0230;
+const uint64_t kGetAppMsgMgr = 0x1B58F70;
+const uint64_t kGetContactMgr = 0x1B417A0;
+const uint64_t kGetContactList = 0x219ED10;
 
 const uint64_t k_sqlite3_exec = 0x3a59b30;
 const uint64_t k_sqlite3_prepare = 0x3a617b0;
@@ -556,7 +556,7 @@ const uint64_t kGetAppInfoByWaid = 0x13c5790;
 const uint64_t kCopyShareAppMessageRequest = 0x13c0670;
 const uint64_t kNewWAUpdatableMsgInfo = 0x919ca0;
 const uint64_t kFreeWAUpdatableMsgInfo = 0x8fc230;
-const uint64_t kSendPatMsg = 0x2ca9790;
+const uint64_t kSendPatMsg = 0xB2BB00;
 const uint64_t kGetOCRManager = 0x999780;
 const uint64_t kDoOCRTask = 0x2c53910;
 
