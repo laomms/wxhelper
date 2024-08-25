@@ -11,7 +11,7 @@ injector.exe -n wechat.exe -i wxhelper.dll
 netstat -ano | findstr 19088
 ```
 WECHAT_VERSION=391125   
-![image]([https://github.com/laomms/FindMuiString/blob/master/1.png](https://github.com/laomms/wxhelper/blob/master/version.png))     
+![image](https://github.com/laomms/wxhelper/blob/master/version.png)     
 偏移自己查找修改      
 
 ```c++
