@@ -10,6 +10,11 @@ injector.exe -n wechat.exe -i wxhelper.dll
 验证端口:
 netstat -ano | findstr 19088
 ```
+#define V_3_9_8_25 39825  
+#define V_3_9_9_43 39943  
+#define V_3_9_10_19 391019  
+#define V_3_9_11_19 391119  
+#define V_3_9_11_25 391125  
 WECHAT_VERSION=391125   
 ![image](https://github.com/laomms/wxhelper/blob/master/version.png)     
 偏移自己查找修改      
