@@ -39,16 +39,16 @@ const uint64_t kGetAppMsgMgr = 0x1B58F70;
 const uint64_t kGetContactMgr = 0x1B417A0;
 const uint64_t kGetContactList = 0x219ED10;
 
-const uint64_t k_sqlite3_exec = 0x3a59b30;
-const uint64_t k_sqlite3_prepare = 0x3a617b0;
+const uint64_t k_sqlite3_exec = 0x183a5eda0;
+const uint64_t k_sqlite3_prepare = 0x183a66a80;
 const uint64_t k_sqlite3_open = 0x3a98fa0;
-const uint64_t k_sqlite3_step = 0x3a1db30;
+const uint64_t k_sqlite3_step = 0x183a22da0;
 const uint64_t k_sqlite3_column_count = 0x3a1e350;
 const uint64_t k_sqlite3_column_name = 0x3a1ed50;
-const uint64_t k_sqlite3_column_type = 0x3a1eba0;
-const uint64_t k_sqlite3_column_blob = 0x3a1e380;
-const uint64_t k_sqlite3_column_bytes = 0x3a1e470;
-const uint64_t k_sqlite3_finalize = 0x3a1cbe0;
+const uint64_t k_sqlite3_column_type = 0x183a23e10;
+const uint64_t k_sqlite3_column_blob = 0x183a235f0;
+const uint64_t k_sqlite3_column_bytes = 0x183a236e0;
+const uint64_t k_sqlite3_finalize = 0x183a21e50;
 
 const uint64_t kGPInstance = 0x58dd300;
 const uint64_t kMultiDBMgr = 0x593abf8;
