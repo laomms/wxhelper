@@ -41,10 +41,10 @@ const uint64_t kGetContactList = 0x219ED10;
 
 const uint64_t k_sqlite3_exec = 0x183a5eda0;
 const uint64_t k_sqlite3_prepare = 0x183a66a80;
-const uint64_t k_sqlite3_open = 0x3a98fa0;
+const uint64_t k_sqlite3_open = 0x183a235c0;
 const uint64_t k_sqlite3_step = 0x183a22da0;
-const uint64_t k_sqlite3_column_count = 0x3a1e350;
-const uint64_t k_sqlite3_column_name = 0x3a1ed50;
+const uint64_t k_sqlite3_column_count = 0x183a235c0;
+const uint64_t k_sqlite3_column_name = 0x183a23fc0;
 const uint64_t k_sqlite3_column_type = 0x183a23e10;
 const uint64_t k_sqlite3_column_blob = 0x183a235f0;
 const uint64_t k_sqlite3_column_bytes = 0x183a236e0;
