@@ -584,7 +584,7 @@ const uint64_t kTransferConfirm = 0x2f8c750;
 const uint64_t kTransferRefuse = 0x2f8d340;
 
 const uint64_t kAddFriend = 0x1f3a350;
-const uint64_t kVerifyApply = 0x1f3a940;
+const uint64_t kVerifyApply = 0x1B3BBE0;
 const uint64_t kDoDelContact = 0x2310120;
 
 const uint64_t kGetSearchContactMgr = 0x1f9a730;
