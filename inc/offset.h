@@ -55,11 +55,11 @@ const uint64_t kMultiDBMgr = 0x3e00910;
 const uint64_t kPublicMsgMgr = 0x3dfe098;
 const uint64_t kFavoriteStorageMgr = 0x3e01478;
 
-const uint64_t kChatRoomMgr = 0x8e9d30;
+const uint64_t kChatRoomMgr = 0x1b83bd0;
 const uint64_t kGetChatRoomDetailInfo = 0xe73590;
 const uint64_t kNewChatRoomInfo = 0x12006b0;
 const uint64_t kFreeChatRoomInfo = 0x1200890;
-const uint64_t kDoAddMemberToChatRoom = 0xe63c70;
+const uint64_t kDoAddMemberToChatRoom = 0x2155100;
 const uint64_t kDoModChatRoomMemberNickName = 0xe6db00;
 const uint64_t kDelMemberFromChatRoom = 0xe64290;
 const uint64_t kGetMemberFromChatRoom = 0xe74de0;
@@ -486,7 +486,7 @@ const uint64_t kChatMsgInstanceCounter = 0x1B5E140;
 const uint64_t kSendFileMsg = 0x20D0230;
 const uint64_t kGetAppMsgMgr = 0x1B58F70;
 const uint64_t kGetContactMgr = 0x1B417A0;
-const uint64_t kGetContactList = 0x219ED10;
+const uint64_t kGetContactList = 0x219ed10;
 
 const uint64_t k_sqlite3_exec = 0x3a5eda0;
 const uint64_t k_sqlite3_prepare = 0x3a66a20;
@@ -505,20 +505,20 @@ const uint64_t kPublicMsgMgr = 0x595ce98;
 const uint64_t kFavoriteStorageMgr = 0x5960498;
 const uint64_t kHardLinkMgr = 0x593ab28;
 
-const uint64_t kChatRoomMgr = 0x1B876C0;
-const uint64_t kGetChatRoomDetailInfo = 0x2160bb0;
+const uint64_t kChatRoomMgr = 0x1b83bd0;
+const uint64_t kGetChatRoomDetailInfo = 0x2165700;
 const uint64_t kNewChatRoomInfo = 0x2509CD0;
 const uint64_t kFreeChatRoomInfo = 0x2509EB0;
-const uint64_t kDoAddMemberToChatRoom = 0x21505b0;
-const uint64_t kDoModChatRoomMemberNickName = 0x215EEB0;
-const uint64_t kDelMemberFromChatRoom = 0x2150bf0;
+const uint64_t kDoAddMemberToChatRoom = 0x2155100;
+const uint64_t kDoModChatRoomMemberNickName = 0x215eeb0;
+const uint64_t kDelMemberFromChatRoom = 0x2155740;
 const uint64_t kGetMemberFromChatRoom = 0x2162400;
 const uint64_t kNewChatRoom = 0x2502540;
 const uint64_t kFreeChatRoom = 0x2502740;
 
 const uint64_t kTopMsg = 0x1d7d160;
 const uint64_t kRemoveTopMsg = 0x2166090;
-const uint64_t kInviteMember = 0x214ff90;
+const uint64_t kInviteMember = 0x2154ae0;
 const uint64_t kHookLog = 0x1304e60;
 
 const uint64_t kCreateChatRoom = 0x214fc60;
@@ -526,10 +526,10 @@ const uint64_t kQuitChatRoom = 0x215ac00;
 const uint64_t kForwardMsg = 0x22C60E0;
 
 const uint64_t kOnSnsTimeLineSceneFinish = 0x1a73150;
-const uint64_t kSNSGetFirstPage = 0x2e1bec0;
-const uint64_t kSNSGetNextPageScene = 0x2e41a70;
-const uint64_t kSNSDataMgr = 0x21dd6b0;
-const uint64_t kSNSTimeLineMgr = 0x2dadf20;
+const uint64_t kSNSGetFirstPage = 0x2e212d0;
+const uint64_t kSNSGetNextPageScene = 0x2ec8970;
+const uint64_t kSNSDataMgr = 0x21e2200;
+const uint64_t kSNSTimeLineMgr = 0x2db3390;
 const uint64_t kGetMgrByPrefixLocalId = 0x213afb0;
 const uint64_t kAddFavFromMsg = 0x2930e40;
 const uint64_t kGetChatMgr = 0x1b876c0;
