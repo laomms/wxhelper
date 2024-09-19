@@ -489,8 +489,8 @@ const uint64_t kGetContactMgr = 0x1B417A0;
 const uint64_t kGetContactList = 0x219ED10;
 
 const uint64_t k_sqlite3_exec = 0x3a5eda0;
-const uint64_t k_sqlite3_prepare = 0x3a66a80;
-const uint64_t k_sqlite3_open = 0x3a235c0;
+const uint64_t k_sqlite3_prepare = 0x3a66a20;
+const uint64_t k_sqlite3_open = 0x3a9e210;
 const uint64_t k_sqlite3_step = 0x3a22da0;
 const uint64_t k_sqlite3_column_count = 0x3a235c0;
 const uint64_t k_sqlite3_column_name = 0x3a23fc0;
@@ -499,10 +499,10 @@ const uint64_t k_sqlite3_column_blob = 0x3a235f0;
 const uint64_t k_sqlite3_column_bytes = 0x3a236e0;
 const uint64_t k_sqlite3_finalize = 0x3a21e50;
 
-const uint64_t kGPInstance = 0x58dd300;
-const uint64_t kMultiDBMgr = 0x593abf8;
-const uint64_t kPublicMsgMgr = 0x5938198;
-const uint64_t kFavoriteStorageMgr = 0x593b790;
+const uint64_t kGPInstance = 0x5902000;
+const uint64_t kMultiDBMgr = 0x595f900;
+const uint64_t kPublicMsgMgr = 0x595ce98;
+const uint64_t kFavoriteStorageMgr = 0x5960498;
 const uint64_t kHardLinkMgr = 0x593ab28;
 
 const uint64_t kChatRoomMgr = 0x1B876C0;
@@ -523,7 +523,7 @@ const uint64_t kHookLog = 0x1304e60;
 
 const uint64_t kCreateChatRoom = 0x214fc60;
 const uint64_t kQuitChatRoom = 0x215ac00;
-const uint64_t kForwardMsg = 0x22c1590;
+const uint64_t kForwardMsg = 0x22C60E0;
 
 const uint64_t kOnSnsTimeLineSceneFinish = 0x1a73150;
 const uint64_t kSNSGetFirstPage = 0x2e1bec0;
@@ -532,7 +532,7 @@ const uint64_t kSNSDataMgr = 0x21dd6b0;
 const uint64_t kSNSTimeLineMgr = 0x2dadf20;
 const uint64_t kGetMgrByPrefixLocalId = 0x213afb0;
 const uint64_t kAddFavFromMsg = 0x2930e40;
-const uint64_t kGetChatMgr = 0x1b82bf0;
+const uint64_t kGetChatMgr = 0x1b876c0;
 const uint64_t kGetFavoriteMgr = 0x1B5C670;
 const uint64_t kAddFavFromImage = 0x293d0f0;
 const uint64_t kGetContact = 0x21945d0;
